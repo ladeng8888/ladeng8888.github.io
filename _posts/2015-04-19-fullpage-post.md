@@ -108,11 +108,12 @@ $(document).ready(function() {
     -->
     <script src="lib/jquery.slimscroll.js"></script>
     <script src="lib/jquery.fullpage.js"></script>
-    <script>
+
+
         $(document).ready(function() {
             $('#fullpage').fullpage();
         });
-    </script>
+
 </body>
 </html>
 ```
@@ -120,22 +121,14 @@ $(document).ready(function() {
 这时候用键盘上的左右按键就会发现我们的第一屏会左右切换，如果按上下键就会发现第二屏第三屏会出现，但是我们发现没有任何样式，我们可以配置一下我们的$('#fullpage').fullpage()，如下：
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="lib/jquery.fullpage.css">
-    <style>
+
         body{
             text-align: center;
             font-size: 40px;
             font-weight: bold;
             color:#fff;
         }
-    </style>
-</head>
-<body>
+   
 <div id="fullpage">
     <div class="section firstPage">
             <div class="slide one">第一屏的第一张幻灯片</div>
@@ -159,7 +152,7 @@ $(document).ready(function() {
     -->
     <script src="lib/jquery.slimscroll.js"></script>
     <script src="lib/jquery.fullpage.js"></script>
-    <script>
+
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 controlArrows:true,//控制左右箭头是否显示，默认值是true,如果设置为false则不显示
@@ -167,30 +160,23 @@ $(document).ready(function() {
                 sectionsColor:['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#000']//定义每个section的CSS背景演示
             });
         });
-    </script>
-</body>
-</html>
+
+
 ```
 
 ### 配置fullpage.js(见script里的配置)
 
 ```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="lib/jquery.fullpage.css">
-    <style>
+
+
         body{
             text-align: center;
             font-size: 40px;
             font-weight: bold;
             color:#fff;
         }
-    </style>
-</head>
-<body>
+ 
+ 
 <div id="fullpage">
     <div class="section firstPage">
             <div class="slide one">第一屏的第一张幻灯片</div>
@@ -214,7 +200,7 @@ $(document).ready(function() {
     -->
     <script src="lib/jquery.slimscroll.js"></script>
     <script src="lib/jquery.fullpage.js"></script>
-    <script>
+
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 controlArrows:true,//控制左右箭头是否显示，默认值是true,如果设置为false则不显示
@@ -225,7 +211,5 @@ $(document).ready(function() {
                 navigation:true,//默认值：false，如果设置为true，那他将会显示一个小圆圈组成的快速导航栏
             });
         });
-    </script>
-</body>
-</html>
+
 ```
