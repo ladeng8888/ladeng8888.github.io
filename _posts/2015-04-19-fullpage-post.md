@@ -2,10 +2,14 @@
 layout: post
 title: fullpage.js的使用
 ---
+
 ## 介绍
 fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何使用fullpage.js：
+
 ## 使用方法
+
 ### 引入js文件
+
 ```
 <script src="lib/jquery-1.12.2.js"></script>
     <!--
@@ -20,11 +24,15 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
     <script src="lib/jquery.slimscroll.js"></script>
     <script src="lib/jquery.fullpage.js"></script>
 ```
+
 ### 引入css文件
+
 ```
 <link rel="stylesheet" href="lib/jquery.fullpage.css">
 ```
+
 ### 引入html代码
+
 ```
 <!--fullpage这个id要加在body下面-->
 <div id="fullpage">
@@ -34,7 +42,9 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
     <div class="section">第四屏</div>
 </div>
 ```
+
 默认是从第一屏开始的，如果你想优先加载某一屏，可以如下使用：
+
 ```
 <!--fullpage这个id要加在body下面-->
 <div id="fullpage">
@@ -44,7 +54,9 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
     <div class="section">第四屏<div></div></div>
 </div>
 ```
+
 每一屏里面加幻灯片效果，比如有三小屏，可以如下在每个div[class="section"]里面加上：
+
 ```
 <div class="section">
 <div class="slide"> Slide 1 </div>
@@ -55,6 +67,7 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
 ```
 
 ### 初始化fullpage.js
+
 ```
 $(document).ready(function() {
     $('#fullpage').fullpage();
@@ -62,6 +75,7 @@ $(document).ready(function() {
 ```
 
 下面是一个比较完整的代码示例：
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -104,6 +118,7 @@ $(document).ready(function() {
 ```
 
 这时候用键盘上的左右按键就会发现我们的第一屏会左右切换，如果按上下键就会发现第二屏第三屏会出现，但是我们发现没有任何样式，我们可以配置一下我们的$('#fullpage').fullpage()，如下：
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -158,6 +173,7 @@ $(document).ready(function() {
 ```
 
 ### 配置fullpage.js(见script里的配置)
+
 ```
 <!DOCTYPE html>
 <html lang="en">
