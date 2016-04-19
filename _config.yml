@@ -25,9 +25,9 @@ description: ladeng8888的个人博客-JavaScript学习
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
+    - JavaScript Tips: "http://lzw.me/pages/ecmascript/"
+    - ECMA文档: "http://lzw.me/pages/ecmascript/"
+    - 墨鱼论坛: "http://moyu-edu.com/qa/"
   Author's home: "http://ladeng8888.github.io/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -39,35 +39,32 @@ avatar: "/img/avatar-icon.png"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
-  email: "youremail@domain.com"
-  facebook: yourname  # eg. daattali
-  github: yourname    # eg. daattali
-  twitter: yourname   # eg. daattali
-  linkedin: yourlink  # eg. "pub/dean-attali/8/946/143"
-  stackoverflow: yourlink  # eg. "3943160/daattali"
+  name: eric zheng
+  email: "js-class@qq.com"
+  facebook: Zheng Eric  # eg. daattali
+  github: ladeng8888    # eg. daattali
  
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: true
   email: true
-  twitter: true
+  twitter: false
   github: true
   linkedin: false
   stackoverflow: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "http://ladeng8888.github.io/"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "disqus_pldXEziTmn"
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+#google_analytics: "UA-76628771-1"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
