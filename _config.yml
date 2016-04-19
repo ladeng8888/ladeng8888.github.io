@@ -24,11 +24,10 @@ description: ladeng8888的个人博客-JavaScript学习
 # List of links in the navigation bar
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - JavaScript Tips: "http://lzw.me/pages/ecmascript/"
+  js资料:
     - ECMA文档: "http://lzw.me/pages/ecmascript/"
     - 墨鱼论坛: "http://moyu-edu.com/qa/"
-  Author's home: "http://ladeng8888.github.io/"
+  墨鱼论坛: "http://moyu-edu.com/qa/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -61,7 +60,7 @@ url-pretty: "http://ladeng8888.github.io/"  # eg. "deanattali.com/beautiful-jeky
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "disqus_pldXEziTmn"
+disqus: "ericzheng"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: "UA-76628771-1"
@@ -69,7 +68,7 @@ disqus: "disqus_pldXEziTmn"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Shanghai"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

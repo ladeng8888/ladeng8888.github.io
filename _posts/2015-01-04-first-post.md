@@ -1,6 +1,9 @@
 ---
 layout: post
-title: First post!
+title: 你好世界
 ---
 
-This is my first post, how exciting!
+```
+    var str = "Hello world";
+    console.log(str);
+```
