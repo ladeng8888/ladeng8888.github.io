@@ -101,9 +101,9 @@ var a=12;
 - 如何严格的判断一个数据是数组（Array）类的实例，下面实例正确的是( )
 
 ```
-    A function isArray(val){ return Array.prototype.toString.call()='[object Array]'; }
-    B function isArray(val){ return Array.prototype.toString.call()===[object Array]; }
-    C function isArray(val){ return Array.prototype.toString.call()===='[object Array]'; }
+    A function isArray(val){ return Object.prototype.toString.call(val)='[object Array]'; }
+    B function isArray(val){ return Object.prototype.toString.call(val)===[object Array]; }
+    C function isArray(val){ return Object.prototype.toString.call(val)===='[object Array]'; }
 ```
 
 
