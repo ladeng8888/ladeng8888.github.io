@@ -2,6 +2,13 @@
 layout: post
 title: 面试题精选（二）
 ---
+-  下列打印结果是多少说出理由：
+
+```
+var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+```
 
 - 下列打印结果是多少说出理由：
 
@@ -14,7 +21,7 @@ var Person = function(name,age){
 var xiaoMing = new Person("xiaoMing",20);
 ```
 
-- var obj = new Object; obj的构造器是___?
+- var obj = {}; obj的构造器是___?
 
 - 如果一个字符串是一个基本数据类型，那为什么可以用split方法?
 
@@ -76,7 +83,7 @@ console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
 - 下面代码结果：
 
 ```
-onsole.log(1 +  "2" + "2");
+console.log(1 +  "2" + "2");
 console.log(1 +  +"2" + "2");
 console.log(1 +  -"1" + "2");
 console.log(+"1" +  "1" + "2");
@@ -100,6 +107,14 @@ console.log(false == '0')
 console.log(false === '0')
 ```
 
+```
+自身作为布尔值：0,NaN,''、null、undefined
+
+两个等于号比较
+1 [1] '1' --> true
+
+```
+
 - 下面代码结果：
 
 ```
@@ -118,7 +133,6 @@ console.log(a[b]);
 ```
 console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
 ```
-
 
 - 下面代码结果
 

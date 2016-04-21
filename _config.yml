@@ -26,7 +26,8 @@ navbar-links:
   About Me: "aboutme"
   js资料:
     - ECMA文档: "http://lzw.me/pages/ecmascript/"
-    - 墨鱼论坛: "http://moyu-edu.com/qa/"
+    - 常见js库: "http://www.javascripting.com/"
+    - js资讯: "http://javascriptweekly.com/issues"
   墨鱼论坛: "http://moyu-edu.com/qa/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
