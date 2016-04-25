@@ -6,3 +6,4 @@ title: 不错的文章收藏
 + [使用 JavaScript 截屏](http://www.barretlee.com/blog/2015/09/24/screenshot-with-javascript/)
 + [gitignore](http://www.barretlee.com/blog/2015/09/06/set-gitignore-after-add-file/)
 + [Hybrid 架构下的 H5 应用加速方案](http://www.aliued.cn/2014/03/02/hybrid-%E6%9E%B6%E6%9E%84%E4%B8%8B%E7%9A%84-h5-%E5%BA%94%E7%94%A8%E5%8A%A0%E9%80%9F%E6%96%B9%E6%A1%88.html?utm_source=tuicool&utm_medium=referral)
++ [css3特效](https://lea.verou.me/css3patterns/)
