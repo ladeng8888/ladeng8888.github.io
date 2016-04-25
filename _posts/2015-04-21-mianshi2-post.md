@@ -63,7 +63,6 @@ myObject.func();
 ```
 for (var i = 0; i < 5; i++) {
   var btn = document.createElement('button');
-  btn.appendChild(document.createTextNode('Button ' + i));
   btn.addEventListener('click', function(){ console.log(i); });
   document.body.appendChild(btn);
 }
@@ -83,32 +82,37 @@ console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
 - 下面代码结果：
 
 ```
-console.log(1 +  "2" + "2");
-console.log(1 +  +"2" + "2");
-console.log(1 +  -"1" + "2");
-console.log(+"1" +  "1" + "2");
-console.log( "A" - "B" + "2");
-console.log( "A" - "B" + 2);
+console.log(1 +  "2" + "2");//122
+console.log(1 +  +"2" + "2");//32
+console.log(1 +  -"1" + "2");//02
+console.log(+"1" +  "1" + "2");//112
+console.log( "A" - "B" + "2");//NaN2
+console.log( "A" - "B" + 2);//NaN
 ```
 
 - 下面代码结果：
 
 ```
-console.log("0 || 1 = "+(0 || 1));
-console.log("1 || 2 = "+(1 || 2));
-console.log("0 && 1 = "+(0 && 1));
-console.log("1 && 2 = "+(1 && 2));
+console.log("0 || 1 = "+(0 || 1));//1
+console.log("1 || 2 = "+(1 || 2));//1
+console.log("0 && 1 = "+(0 && 1));//0
+console.log("1 && 2 = "+(1 && 2));//2
 ```
 
 - 下面代码结果：
 
 ```
-console.log(false == '0')
-console.log(false === '0')
+console.log(false == '0');//true
+console.log(false === '0');//false
 ```
 
 ```
 自身作为布尔值：0,NaN,''、null、undefined
+
+if(){
+
+}
+
 
 两个等于号比较
 1 [1] '1' --> true
@@ -122,8 +126,8 @@ var a={},
     b={key:'b'},
     c={key:'c'};
 
-a[b]=123;
-a[c]=456;
+a[b]=123;//a['[object Object]'] = 123;
+a[c]=456;//a['[object Object]'] = 456;
 
 console.log(a[b]);
 ```
@@ -131,6 +135,7 @@ console.log(a[b]);
 - 下面代码结果：
 
 ```
+//递归
 console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
 ```
 
@@ -139,6 +144,7 @@ console.log((function f(n){return ((n > 1) ? n * f(n-1) : n)})(10));
 ```
 (function(x) {
     return (function(y) {
+        console.log(this);//window
         console.log(x);
     })(2)
 })(1);
@@ -157,8 +163,10 @@ var hero = {
 var stoleSecretIdentity = hero.getSecretIdentity;
 
 console.log(stoleSecretIdentity());
+console.log(stoleSecretIdentity.call(hero));
 console.log(hero.getSecretIdentity());
 ```
+
 
 - 下面代码结果:
 
