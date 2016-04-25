@@ -10,7 +10,7 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
 
 ### 引入js文件
 
-```
+```html
 <script src="lib/jquery-1.12.2.js"></script>
     <!--
         当你配置了css3:false的时候，可以增加jquery.easings.min.js，这样你可以使用除了jQuery的linear,swing这二种默认运动方式
@@ -27,13 +27,13 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
 
 ### 引入css文件
 
-```
+```html
 <link rel="stylesheet" href="lib/jquery.fullpage.css">
 ```
 
 ### 引入html代码
 
-```
+```html
 <!--fullpage这个id要加在body下面-->
 <div id="fullpage">
     <div class="section">第一屏</div>
@@ -45,7 +45,7 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
 
 默认是从第一屏开始的，如果你想优先加载某一屏，可以如下使用：
 
-```
+```html
 <!--fullpage这个id要加在body下面-->
 <div id="fullpage">
     <div class="section">第一屏</div>
@@ -57,7 +57,7 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
 
 每一屏里面加幻灯片效果，比如有三小屏，可以如下在每个div[class="section"]里面加上：
 
-```
+```html
 <div class="section">
 <div class="slide"> Slide 1 </div>
 <div class="slide"> Slide 2 </div>
@@ -68,7 +68,7 @@ fullpage.js是一个使用很广泛的全屏滚动插件，下面教一下如何
 
 ### 初始化fullpage.js
 
-```
+```javascript
 $(document).ready(function() {
     $('#fullpage').fullpage();
 });
@@ -76,7 +76,7 @@ $(document).ready(function() {
 
 下面是一个比较完整的代码示例：
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,14 +120,16 @@ $(document).ready(function() {
 
 这时候用键盘上的左右按键就会发现我们的第一屏会左右切换，如果按上下键就会发现第二屏第三屏会出现，但是我们发现没有任何样式，我们可以配置一下我们的$('#fullpage').fullpage()，如下：
 
-```
+```html
 
-        body{
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-            color:#fff;
-        }
+<style>
+    body{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color:#fff;
+    }
+</style>
    
 <div id="fullpage">
     <div class="section firstPage">
@@ -166,15 +168,17 @@ $(document).ready(function() {
 
 ### 配置fullpage.js(见script里的配置)
 
-```
+```html
 
 
-        body{
-            text-align: center;
-            font-size: 40px;
-            font-weight: bold;
-            color:#fff;
-        }
+<style>
+    body{
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color:#fff;
+    }
+</style>
  
  
 <div id="fullpage">
@@ -199,8 +203,7 @@ $(document).ready(function() {
         对于内容比较多的页面，可以设置右侧的滚动条，但是默认情况下无法滚动，这个文件就是起这个作用的
     -->
     <script src="lib/jquery.slimscroll.js"></script>
-    <script src="lib/jquery.fullpage.js"></script>
-
+    <script src="lib/jquery.fullpage.js">
         $(document).ready(function() {
             $('#fullpage').fullpage({
                 controlArrows:true,//控制左右箭头是否显示，默认值是true,如果设置为false则不显示
@@ -211,5 +214,5 @@ $(document).ready(function() {
                 navigation:true,//默认值：false，如果设置为true，那他将会显示一个小圆圈组成的快速导航栏
             });
         });
-
+    </script>
 ```

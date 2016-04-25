@@ -5,7 +5,7 @@ title: JavaScript面试题精选(一)
 
 - person1和person2的区别：
 
-```
+```javascript
 function Person(){}, 
 var person1 = Person()
 var person2 = new Person()
@@ -14,19 +14,19 @@ var person2 = new Person()
 
 - 按下面的结果自定义一个duplicate函数
 
-```
+```javascript
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 
 - 写出下面的结果
 
-```
+```javascript
 var foo = 10 + '20';
 ```
 
 - 写一个add函数实现下面的功能
 
-```
+```javascript
 add(2, 5); // 7
 add(2)(5); // 7
 ```
@@ -34,20 +34,20 @@ add(2)(5); // 7
 
 - 写出下面的结果是多少
 
-```
+```javascript
 "i'm a lasagna hog".split("").reverse().join("");
 ```
 
 
 - 写出下面的结果是多少
 
-```
+```javascript
 ( window.foo || ( window.foo = "bar" ) );
 ```
 
 - 写出下面的结果是多少
 
-```
+```javascript
 var foo = "Hello";
 (function() {
   var bar = " World";
@@ -58,7 +58,7 @@ alert(foo + bar);
 
 - foo.x的结果是多少
 
-```
+```javascript
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
@@ -71,7 +71,8 @@ foo.x = foo = {n: 2};
 - 如何检测Null、Undefined、空、NaN
 
 - 下列代码的结果是多少,怎么解决打印出来的结果是0,1,2,3,4
-```
+
+```javascript
 for (var i=0; i<5; i++) {
     setTimeout(function(){
         console.log(i); 
@@ -87,7 +88,7 @@ for (var i=0; i<5; i++) {
 
 - 写出下面的结果是多少
 
-```
+```javascript
 var a=12;
     for(var i=0;i<10;i++){
         setTimeout(function(){
@@ -100,7 +101,7 @@ var a=12;
 
 - 如何严格的判断一个数据是数组（Array）类的实例，下面实例正确的是( )
 
-```
+```javascript
     A function isArray(val){ return Object.prototype.toString.call(val)='[object Array]'; }
     B function isArray(val){ return Object.prototype.toString.call(val)===[object Array]; }
     C function isArray(val){ return Object.prototype.toString.call(val)===='[object Array]'; }
