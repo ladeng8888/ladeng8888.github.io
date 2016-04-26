@@ -28,8 +28,9 @@ navbar-links:
     - ECMA文档: "http://lzw.me/pages/ecmascript/"
     - 常见js库: "http://www.javascripting.com/"
     - js资讯: "http://javascriptweekly.com/issues"
-  墨鱼论坛: "http://moyu-edu.com/qa/"
-
+    - sublime配置: "javascript:void(0);"
+  JS 101教材: "javascript:void(0);"
+  精神导师:"哲学之类的书"
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
