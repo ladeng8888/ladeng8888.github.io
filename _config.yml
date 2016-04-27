@@ -29,8 +29,10 @@ navbar-links:
     - 常见js库: "http://www.javascripting.com/"
     - js资讯: "http://javascriptweekly.com/issues"
     - sublime配置: "javascript:void(0);"
-  JS 101教材: "javascript:void(0);"
-  精神导师:"哲学之类的书"
+    - js兼容性: "http://kangax.github.io/compat-table/es5/"
+    - gitignore: "https://www.gitignore.io/"
+    - js论坛: "https://coderwall.com"
+    - js tricks: "http://wtfjs.com/"
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 avatar: "/img/avatar-icon.png"
